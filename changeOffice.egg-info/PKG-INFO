@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: changeOffice
-Version: 0.51
+Version: 0.52
 Summary: change msOffice format from xls to xlsx, doc to docx, ppt to pptx
 Home-page: https://github.com/wangmarkqi/changeOffice
 Author: Wang Qi
