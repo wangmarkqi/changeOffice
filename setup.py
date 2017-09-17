@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 setup(
   name = 'changeOffice',
   packages = ['changeOffice'],
@@ -8,18 +8,17 @@ setup(
   author = 'Wang Qi',
   author_email = 'wangmarkqi@gmail.com',
   url = 'https://github.com/wangmarkqi/changeOffice',
-  download_url = 'https://github.com/wangmarkqi/changeOffice/archive/0.1.tar.gz',
-    install_requires=[ 'pywin32'],
+  download_url = 'https://github.com/wangmarkqi/changeOffice.git',
+    install_requires=[ 'pywin32>=214'],
   keywords = ['excel', 'word', 'ppt','xls to xlsx','doc to docx','ppt to pptx'],
-  classifiers = [
-    'Development Status :: 0.1',
-    'Operating System :: Windows',
-    'Intended Audience :: Accountant,Financial analyst Developers',
-    'License :: MIT License',
-    'Programming Language :: Python',
-    'Programming Language :: Python :: Implementation',
-    'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.6',
-    'Topic :: Data Process :: Libraries'
-  ],
+  classifiers = [],
 )
+
+'''
+# 上传source 包
+python setup.py sdist build
+python setup.py sdist upload
+# 上传pre-compiled包
+python setup.py bdist_wheel --universal
+python setup.py bdist_wheel upload
+'''

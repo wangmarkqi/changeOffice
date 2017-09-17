@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+changeOffice/__init__.py
+changeOffice/changeOffice.py
+changeOffice.egg-info/PKG-INFO
+changeOffice.egg-info/SOURCES.txt
+changeOffice.egg-info/dependency_links.txt
+changeOffice.egg-info/requires.txt
+changeOffice.egg-info/top_level.txt
