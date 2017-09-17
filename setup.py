@@ -2,7 +2,7 @@ from setuptools import setup
 setup(
   name = 'changeOffice',
   packages = ['changeOffice'],
-  version = '0.51',
+  version = '0.52',
   description = 'change msOffice format from xls to xlsx, doc to docx, ppt to pptx',
   author = 'Wang Qi',
   author_email = 'wangmarkqi@gmail.com',

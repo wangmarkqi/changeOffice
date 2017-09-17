@@ -10,7 +10,7 @@ class Change():
             newname = targetFile.replace('.doc', '.docx')
             # wrd = win32.Dispatch("Word.Application")
             wrd = win32.gencache.EnsureDispatch('Word.Application')
-            wrd.Visible = True
+            wrd.Visible = False
             # wrd.Application.DisplayAlerts = False
             wb = wrd.Documents.Open(targetFile)
             wb.SaveAs(newname, FileFormat=12)
@@ -28,7 +28,6 @@ class Change():
             os.remove(targetFile)
     def change_signlePpt(self,file):
         if file.endswith('.ppt'):
-            print (file)
             newname = file.replace('.ppt', '.pptx')
             ppt = win32.gencache.EnsureDispatch("PowerPoint.Application")
             pres = ppt.Presentations.Open(file,True,False,False)
