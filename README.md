@@ -1,7 +1,7 @@
 Chage your doc, xls, ppt automatically!
 ======================================================
 ### Description:
-Most of the python MsOffice processing libraries, like openpyxk,python-docx,python-pptx, are dealing with new office 2007 file formate (ie: xlsx,pptx,docx). This package can change old office 2003 to new,ie: doc2docx,xls2xlsx,ppt2pptx.
+Most of the python MsOffice processing libraries, like openpyxl,python-docx,python-pptx, are dealing with new office 2007 file formate (ie: xlsx,pptx,docx). This package can change old office 2003 to new,ie: doc2docx,xls2xlsx,ppt2pptx.
 
 ## Dependencies:
 Pywin32 must be pre-installed and python3 is required.  

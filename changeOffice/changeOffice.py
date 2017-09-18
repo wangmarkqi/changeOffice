@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import win32com.client as win32
+import win32com
 class Change():
     def __init__(self,dataDir):
         self.root=dataDir
@@ -60,6 +61,10 @@ class Change():
         for f in self.get_allPath():
             print ("converting",f)
             self.change_singleDoc(f)
+
+
+
+
 
 
 
