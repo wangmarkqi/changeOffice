@@ -16,7 +16,7 @@ pip install changeOffice
 `from changeOffice import Change`    
 `c=Change("./data")`  
 ./data  is the root dir path you put your data in ,nested dirs works`
-- step2: change formate and the api name is obvious:    
+- step2: change formate and the api name is obvious self-explanation:    
 `c.doc2docx()`   
 `c.et2xls()# .et file must be converted to xls before  and then convert xls to xlsx`   
 `c.xls2xlsx()`    
