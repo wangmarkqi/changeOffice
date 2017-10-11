@@ -7,6 +7,7 @@ class Change():
         self.root=dataDir
     def change_singleDoc(self,targetFile):
         if targetFile.endswith('.doc'):
+            print ("converting",targetFile)
             targetFile = os.path.abspath(targetFile)
             newname = targetFile.replace('.doc', '.docx')
             # wrd = win32.Dispatch("Word.Application")
@@ -20,6 +21,7 @@ class Change():
             os.remove(targetFile)
     def change_singleXls(self,targetFile):
         if targetFile.endswith('.xls'):
+            print ("converting",targetFile)
             newname = targetFile.replace('.xls', '.xlsx')
             excel = win32.gencache.EnsureDispatch('Excel.Application')
             excel.Application.DisplayAlerts = False
@@ -29,6 +31,7 @@ class Change():
             os.remove(targetFile)
     def change_signlePpt(self,file):
         if file.endswith('.ppt'):
+            print ("converting",file)
             newname = file.replace('.ppt', '.pptx')
             ppt = win32.gencache.EnsureDispatch("PowerPoint.Application")
             pres = ppt.Presentations.Open(file,True,False,False)
@@ -38,6 +41,8 @@ class Change():
             os.remove(file)
     def change_sigleEt(self,targetFile):
         if targetFile.endswith('.et'):
+            print ("converting",targetFile)
+            newname = targetFile.replace('.xls', '.xlsx')
             os.rename(targetFile,targetFile.replace('.et','.xls'))
     def get_allPath(self):
         files = []
@@ -47,19 +52,15 @@ class Change():
         return files
     def xls2xlsx(self):
         for f in self.get_allPath():
-            print ("converting",f)
             self.change_singleXls(f)
     def et2xls(self):
         for f in self.get_allPath():
-            print ("converting",f)
             self.change_sigleEt(f)
     def ppt2pptx(self):
         for f in self.get_allPath():
-            print ("converting",f)
             self.change_signlePpt(f)
     def doc2docx(self):
         for f in self.get_allPath():
-            print ("converting",f)
             self.change_singleDoc(f)
 
 
